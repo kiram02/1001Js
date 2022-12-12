@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* Variable : sesuatu yang bakal banyak kita pakai */
+
 :root {
     --container-color: #1a1e21;
     --second-color:#fd9f44;
@@ -73,7 +73,7 @@ header.shadow {
     color: var(--second-color);
 }
 
-/* home */
+
 .home{
     width: 100%;
     min-height: 440px;
@@ -97,7 +97,6 @@ header.shadow {
     font-weight: 400;
 }
 
-/* Post Filter */
 .post-filter{
     display: flex;
     justify-content: center;
@@ -119,7 +118,7 @@ header.shadow {
     border-radius: 4px;
 }
 
-/* Posts */
+
 .post {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
@@ -130,6 +129,7 @@ header.shadow {
 .post-box{
     background: var(--bg-color);
     overscroll-behavior-x: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    text-align: center;
     padding: 15px;
     border-radius: 0.5rem;
 }
@@ -150,8 +150,9 @@ header.shadow {
 }
 
 .post-title{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
+    text-align: center;
     color: var(--text-color);
     /* Ngatur judul biar cuman 2 baris  */
     display: -webkit-box;
@@ -160,30 +161,32 @@ header.shadow {
     overflow: hidden;
 }
 
-/* Ngatur tgl */
-.post-date{
-    display: flex;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 4px;
-}
 
 .post-description{
-    font-size: 0.9rem;
+    font-size: 14px;
     line-height: 1.5rem;
-    margin: 5px 0 10px;
-    /* Ngatur desk biar cuman 3 baris, lebihnya disembunyiin */
+    text-align: center;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* 
-
-
-} */
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+.button:hover{
+    background: var(--container-color) ;
+}
 
 .profile{
     display: flex;
@@ -197,5 +200,5 @@ header.shadow {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 2px solid var(--second-color);
+    border: 2px solid black;
 }
